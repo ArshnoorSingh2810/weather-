@@ -93,43 +93,7 @@ function displayweather(data){
        card.appendChild(mintempdisplay);
        card.appendChild(maindisplay);
 
-    const clearskygif="https://i.gifer.com/7efs.gif";
-    const fewcloudsgif="https://i.gifer.com/3ori.gif";
-    const scatteredcloudsgif="https://i.gifer.com/3ori.gif";
-    const brokencloudsgif="https://i.gifer.com/3ori.gif";
-    const showerraingif="https://i.gifer.com/7efs.gif";
-    const raingif="https://i.gifer.com/7efs.gif";
-    const thunderstormgif="https://i.gifer.com/7efs.gif";
-    const snowgif="https://i.gifer.com/7efs.gif";
-    const mistgif="https://i.gifer.com/7efs.gif";
-
-    if (clearskygif == getweatheremoji(id)) {
-        document.body.style.backgroundImage = `url(${clearskygif})`;
-        else if (fewcloudsgif == getweatheremoji(id)) {
-            document.body.style.backgroundImage = `url(${fewcloudsgif})`;
-        }
-        else if (scatteredcloudsgif == getweatheremoji(id)) {
-            document.body.style.backgroundImage = `url(${scatteredcloudsgif})`;
-        }
-        else if (brokencloudsgif == getweatheremoji(id)) {
-            document.body.style.backgroundImage = `url(${brokencloudsgif})`;
-} 
-else if (showerraingif == getweatheremoji(id)) {
-    document.body.style.backgroundImage = `url(${showerraingif})`;
-}
-else if (raingif == getweatheremoji(id)) {
-    document.body.style.backgroundImage = `url(${raingif})`;
-}
-else if (thunderstormgif == getweatheremoji(id)) {
-    document.body.style.backgroundImage = `url(${thunderstormgif})`;
-}
-else if (snowgif == getweatheremoji(id)) {
-    document.body.style.backgroundImage = `url(${snowgif})`;
-}
-else if (mistgif == getweatheremoji(id)) {
-    document.body.style.backgroundImage = `url(${mistgif})`;
-}
-
+    }
 function getweatheremoji(weatherid){
 
 }
