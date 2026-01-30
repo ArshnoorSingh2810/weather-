@@ -104,5 +104,7 @@ function DisplayError(message){
   errordisplay.classList.add("error-message");
   card.textContent="";
   card.appendChild(errordisplay);
+ errordisplay.innerHTML=<'p class="bg-gradient-to-r from-purple-400/20 to-pink-400/20 backdrop-blur-sm p-6 rounded-2xl border border-white/20"><span class="text-3xl font-bold text-white"'>
+
 
 }
