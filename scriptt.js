@@ -104,7 +104,7 @@ function DisplayError(message){
   errordisplay.classList.add("error-message");
   card.textContent="";
   card.appendChild(errordisplay); 
- errordisplay.className= "text-red-700 font-bold text-center";
+ errordisplay.className= "text-red-700 text-4xl font-bold text-center";
 
 
 }
