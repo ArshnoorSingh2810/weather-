@@ -14,8 +14,8 @@ weatherform.addEventListener('submit',async event=>{
 
     }
     catch(error){
-        console.log(error);
-        DisplayError(error);
+        console.log(error); 
+        DisplayError(error.message);
  }}
  else{
     DisplayError("Please enter a city name");
@@ -86,6 +86,7 @@ function displayweather(data){
        weatherContainer.appendChild(mintempdisplay);
        weatherContainer.appendChild(maindisplay);
        weatherContainer.appendChild(descriptiondisplay);
+       card.appendChild(weatherContainer);
       
     }
 function DisplayError(message){
@@ -97,6 +98,7 @@ function DisplayError(message){
   card.appendChild(errordisplay);
 
 }
+
 
 
 
