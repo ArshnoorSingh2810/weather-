@@ -133,8 +133,7 @@ function DisplayError(message) {
   card.textContent = "";
 
   const errordisplay = document.createElement("div");
-  errordisplay.className =
-    "text-white text-2xl";
+  errordisplay.className ="text-white text-4xl";
 
   errordisplay.textContent = message;
   card.appendChild(errordisplay);
