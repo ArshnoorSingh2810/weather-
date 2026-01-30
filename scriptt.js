@@ -93,10 +93,11 @@ function DisplayError(message){
   errordisplay.textContent=message;
   errordisplay.classList.add("error-message");
   card.textContent="";
-  errordisplay.className="font-white-500 font-2xl bg-gradient-to-r from-purple-400/20 to-pink-400/20 backdrop-blur-sm p-6 rounded-2xl border border-white/20"
+  errordisplay.className="text-white-500 text-2xl bg-gradient-to-r from-purple-400/20 to-pink-400/20 backdrop-blur-sm p-6 rounded-2xl border border-white/20"
   card.appendChild(errordisplay);
 
 }
+
 
 
 
