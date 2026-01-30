@@ -133,7 +133,7 @@ function DisplayError(message) {
   card.textContent = "";
 
   const errordisplay = document.createElement("div");
-  errordisplay.className ="font-bold text-center text-red-700 text-4xl
+  errordisplay.className ="font-bold text-center text-red-700 text-4xl";
 
   errordisplay.textContent = message;
   card.appendChild(errordisplay);
