@@ -134,8 +134,9 @@ function DisplayError(message) {
 
   const errordisplay = document.createElement("div");
   errordisplay.className =
-    "text-white text-2xl bg-gradient-to-r from-purple-400/20 to-pink-400/20 backdrop-blur-sm p-6 rounded-2xl border border-white/20 text-center";
+    "text-white text-2xl";
 
   errordisplay.textContent = message;
   card.appendChild(errordisplay);
 }
+
