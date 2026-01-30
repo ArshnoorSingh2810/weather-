@@ -86,25 +86,16 @@ function displayweather(data){
        weatherContainer.appendChild(mintempdisplay);
        weatherContainer.appendChild(maindisplay);
        weatherContainer.appendChild(descriptiondisplay);
-       
-       card.appendChild(weatherContainer);
-       card.appendChild(windspeeddisplay);
-       card.appendChild(maxtempdisplay);
-       card.appendChild(mintempdisplay);
-       card.appendChild(maindisplay);
-
+      
     }
-function getweatheremoji(weatherid){
-
-}
-
 function DisplayError(message){
   const errordisplay=document.createElement("p");
   errordisplay.textContent=message;
   errordisplay.classList.add("error-message");
   card.textContent="";
   card.appendChild(errordisplay);
- errordisplay.innerHTML=<'p class="bg-gradient-to-r from-purple-400/20 to-pink-400/20 backdrop-blur-sm p-6 rounded-2xl border border-white/20"><span class="text-3xl font-bold text-white"'>
+ errordisplay.className="bg-gradient-to-r from-purple-400/20 to-pink-400/20 backdrop-blur-sm p-6 rounded-2xl border border-white/20"
 
 
 }
+
