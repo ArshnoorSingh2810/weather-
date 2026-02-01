@@ -53,6 +53,10 @@ function displayweather(data){
         const maxtempdisplay=document.createElement("div");
         const mintempdisplay=document.createElement("div");
         const maindisplay=document.createElement("div");
+        const weathericon=document.createElement("div");
+
+        weathericon.textContent=`${getweathericon(id)}`;
+        weathericon.className="text-center text-9xl mb-8 drop-shadow-lg";
 
         citydisplay.textContent= `📍 ${city}`;
         citydisplay.className="text-center text-7xl font-extrabold text-white mb-8 drop-shadow-lg";
@@ -86,16 +90,38 @@ function displayweather(data){
        weatherContainer.appendChild(mintempdisplay);
        weatherContainer.appendChild(maindisplay);
        weatherContainer.appendChild(descriptiondisplay);
+       weatherContainer.appendChild(weathericon);
        
        card.appendChild(weatherContainer);
        card.appendChild(windspeeddisplay);
        card.appendChild(maxtempdisplay);
        card.appendChild(mintempdisplay);
        card.appendChild(maindisplay);
-
+       card.appendChild(descriptiondisplay);
+       card.appendChild(weathericon);
     }
-function getweatheremoji(weatherid){
-
+function getweathericon(id){
+    if(id>=200 && id<300){
+        return"🌩️"; // Thunderstorm gif
+    }
+    else if(id>=300 && id<500){
+        return"🌧️"; // Drizzle gif
+    }
+    else if(id>=500 && id<600){
+        return"🌧️"; // Rain gif
+    }
+    else if(id>=600 && id<700){
+        return"❄️"; // Snow gif
+    }
+    else if(id>=700 && id<800){
+        return"🍃"; // Atmosphere gif
+    }
+    else if(id===800){
+        return"☀️"; // Clear sky gif
+    }
+    else if(id>800 && id<900){
+        return"⛅"; // Clouds gif
+    }
 }
 
 function DisplayError(message){
@@ -103,8 +129,6 @@ function DisplayError(message){
   errordisplay.textContent=message;
   errordisplay.classList.add("error-message");
   card.textContent="";
-  card.appendChild(errordisplay); 
- errordisplay.className= "text-red-700 text-4xl font-bold text-center";
-
+  card.appendChild(errordisplay);
 
 }
